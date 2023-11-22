@@ -30,7 +30,7 @@ function configurePins() {
       const cmd = `config-pin ${pin.pin} ${pin.mode}`;
       executeCommand(cmd)
         .then((res) => {
-          console.log("Pino ${pin.pin} configurado para o modo ${pin.mode}");
+          console.log(`Pino ${pin.pin} configurado para o modo ${pin.mode}`);
         })
         .catch((error) => {
           console.error("Erro ao configurar o pino:", error);
